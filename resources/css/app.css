@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scrollbar-gutter: stable;
+}
+
+* {
+    text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+    @apply w-[0.5dvw];
+}
+
+::-webkit-scrollbar-track {
+    @apply rounded shadow-inner;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded bg-indigo-600 hover:bg-indigo-800 transition;
+}
