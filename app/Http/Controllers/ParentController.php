@@ -34,10 +34,10 @@ abstract class ParentController extends Controller
     public function search(Request $request)
     {
         $request->validate([
-            'search' => 'nullable|string'
+            'searchInput' => 'nullable|string'
         ]);
 
-        $searchInput = $request->input('search', '');
+        $searchInput = $request->input('searchInput', '');
 
         if (empty($searchInput)) {
             return redirect()->route($this->viewName . '.index');
@@ -47,7 +47,7 @@ abstract class ParentController extends Controller
 
         return view($this->viewName . '.index', [
             $this->pluralViewName => $search,
-            'search' => $search
+            'searchInput' => $searchInput
         ]);
     }
 

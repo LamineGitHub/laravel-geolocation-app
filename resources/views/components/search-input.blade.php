@@ -1,8 +1,8 @@
 <form method="get" {{ $attributes }}>
     <div class="relative">
-        <label for="Search" class="sr-only"> Search </label>
-        <input type="text" id="Search" name="search"
-               placeholder="Rechercher par nom" value="{{ request('search') ?? '' }}"
+        <label for="searchInput" class="sr-only"> Search </label>
+        <input type="text" id="searchInput" name="searchInput"
+               placeholder="Rechercher par nom" value="{{ request('searchInput') ?? '' }}"
                class="w-full rounded-md border-gray-200 py-2 pe-10 shadow-sm sm:text-sm"
         />
         <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
