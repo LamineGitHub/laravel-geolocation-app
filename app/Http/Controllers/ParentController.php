@@ -43,10 +43,10 @@ abstract class ParentController extends Controller
             return redirect()->route($this->viewName . '.index');
         }
 
-        $search = $this->model::where('nom', 'like', '%' . $searchInput . '%')->get();
+        $searched = $this->model::where('nom', 'like', '%' . $searchInput . '%')->get();
 
         return view($this->viewName . '.index', [
-            $this->pluralViewName => $search,
+            $this->pluralViewName => $searched,
             'searchInput' => $searchInput
         ]);
     }
