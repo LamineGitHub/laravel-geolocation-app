@@ -27,9 +27,6 @@
                     <x-nav-link :href="route('terrain.index')" :active="request()->routeIs('terrain.*')">
                         {{ __('Terrain') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('avoir.index')" :active="request()->routeIs('avoir.*')">
-                        {{ __('Avoir') }}
-                    </x-nav-link>
                 </div>
             </div>
 
@@ -104,9 +101,6 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('terrain.index')" :active="request()->routeIs('terrain.*')">
                 {{ __('Terrain') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('avoir.index')" :active="request()->routeIs('avoir.*')">
-                {{ __('Avoir') }}
             </x-responsive-nav-link>
         </div>
 
