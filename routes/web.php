@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AvoirController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PromoteurController;
 use App\Http\Controllers\RegionController;
@@ -32,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('promoteur', PromoteurController::class);
     Route::resource('zone', ZoneController::class);
     Route::resource('terrain', TerrainController::class);
+    Route::resource('avoir', AvoirController::class);
 });
 
 //Route::get('/', static function () {
