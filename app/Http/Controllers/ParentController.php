@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 
@@ -66,6 +67,10 @@ abstract class ParentController extends Controller
 
     public function show(int $id): View
     {
+        if (!ViewFacade::exists($this->viewName . '.show')) {
+            abort(404);
+        }
+
         return view($this->viewName . '.show', [
             $this->viewName => $this->model::findOrFail($id)
         ]);
