@@ -84,25 +84,25 @@ Cela démarrera un serveur de développement local à l'adresse http://localhost
 Les contributions sont les bienvenues ! Avant de soumettre une pull request, veuillez vous assurer de suivre ces étapes :
 
 1. Créez une branche pour votre fonctionnalité ou correctif :
-```bash
-git checkout -b nom-de-votre-branche
-```
+    ```bash
+    git checkout -b nom-de-votre-branche
+    ```
 
 2. Effectuez vos modifications et ajoutez-les à l'index :
-```bash
-git add .
-```
+    ```bash
+    git add .
+    ```
 
 3. Faites un commit de vos modifications avec un message clair :
+    ```bash
+    git commit -m "Votre message de commit ici"
+    ```
 
-```bash
-git commit -m "Votre message de commit ici"
-```
 4. Poussez vos modifications vers votre branche :
-
-```bash
-git push origin nom-de-votre-branche
-```
+    ```bash
+    git push origin nom-de-votre-branche
+    ```
+   
 5. Ouvrez une pull request sur la branche principale du projet.
 
 ## Licence
